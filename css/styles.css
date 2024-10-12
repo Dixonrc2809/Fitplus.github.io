@@ -203,7 +203,7 @@ h1 {
 /* Ajustes para pantallas medianas */
 @media (max-width: 1024px) {
     .main-banner {
-        height: 75vh;
+        height: 150vh;
     }
 
     #bg-image {
@@ -215,7 +215,7 @@ h1 {
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     .main-banner {
-        height: auto;
+        height: 100vh;
         min-height: 400px;
     }
 
@@ -709,7 +709,7 @@ iframe {
 
 
 
-/* ***** Barras de Concurrencia ***** */
+/* ***** Barras de Concurrencia INICIO***** */
 
 h1 {
     text-align: center;
@@ -777,9 +777,9 @@ h1 {
         max-width: 90%; /* Aumenta el ancho máximo para pantallas pequeñas */
     }
 }
+/* ***** Barras de Concurrencia FIN ***** */
 
-
-/* Estilos para la sección de testimonios */
+/* ***** Estilos para la sección de testimonios INICIO ******* */
 
 .testimonial-item {
     padding: 30px; /* Padding interno */
@@ -827,9 +827,11 @@ img.rounded-circle {
         font-size: 1.1em; /* Ajustar tamaño de fuente en móviles */
     }
 }
+/* Estilos para la sección de testimonios FIN */
 
 
-/* General card styling */
+
+/* ****** Estilos para la sección de Nosotros INICIO ******* */
 .custom-card {
     border: none;
     border-radius: 15px;
@@ -853,7 +855,7 @@ img.rounded-circle {
     position: absolute;
     width: 150px;
     height: 150px;
-    background: rgba(138, 112, 176, 0.1);
+    background: #6fb02021;
     border-radius: 50%;
     top: -50px;
     right: -50px;
@@ -865,7 +867,7 @@ img.rounded-circle {
     position: absolute;
     width: 100px;
     height: 100px;
-    background: rgba(138, 112, 176, 0.1);
+    background: #6fb02021;
     border-radius: 50%;
     bottom: -30px;
     left: -30px;
@@ -879,10 +881,8 @@ img.rounded-circle {
     text-align: center;
     margin-bottom: 15px;
     position: relative;
-    z-index: 2;
     color: #8A70B0;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 /* Text styling */
@@ -895,17 +895,13 @@ img.rounded-circle {
     text-align: justify;
 }
 
-.btn-custom:hover {
-    background-color: #6c4b8b;
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .custom-card {
         margin-bottom: 20px;
     }
 }
-
+/* ****** Estilos para la sección de Nosotros FIN ****** */
 
 
 /* ***** Footer Inicio ***** */
