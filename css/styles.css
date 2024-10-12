@@ -591,12 +591,12 @@ h1 {
 }
 
 .bg-blog {
-    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(/imagenes/bannerBlog.jpg) top center no-repeat;
+    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../imagenes/bannerBlog.jpg) top center no-repeat;
     background-size: cover;
 }
 
 .bg-servicios {
-    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(/imagenes/bannerBlog.jpg) top center no-repeat;
+    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../imagenes/bannerBlog.jpg) top center no-repeat;
     background-size: cover;
 }
 
