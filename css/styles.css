@@ -203,14 +203,12 @@ h1 {
 /* Ajustes para pantallas medianas */
 @media (max-width: 1024px) {
     .main-banner {
-        height: 75vh; /* Ajuste de altura para pantallas medianas */
-        position: relative; /* Aseguramos que el contenido sea relativo al contenedor */
+        height: 75vh; /* Reducimos un poco la altura */
     }
 
     #bg-image {
         object-fit: cover;
-        object-position: center top; /* Enfocamos la parte superior */
-        width: 100%;
+        object-position: center top; /* Alineamos la imagen desde la parte superior */
         height: 100%;
     }
 }
@@ -218,37 +216,23 @@ h1 {
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     .main-banner {
-        height: 60vh; /* Reducimos la altura, pero aseguramos espacio para el contenido */
-        position: relative; /* El contenedor y la imagen deben estar alineados con el contenido */
+        height: auto; /* Ajustamos la altura para adaptarse mejor */
+        min-height: 400px; /* Aseguramos una altura mínima */
     }
 
     #bg-image {
-        object-fit: cover; /* La imagen cubrirá todo el espacio del banner */
+        object-fit: contain; /* Muestra toda la imagen sin recortar */
         object-position: center; /* Centramos la imagen */
         width: 100%;
-        height: 100%; /* Hacemos que ocupe toda la altura del contenedor */
-    }
-
-    .caption {
-        position: absolute;
-        bottom: 10%; /* Movemos el texto y el botón hacia arriba para darles espacio */
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        z-index: 2; /* Aseguramos que el contenido esté sobre la imagen */
+        height: auto; /* Mantén la proporción de la imagen */
     }
 
     .caption h2 {
-        font-size: 1.8rem;
+        font-size: 1.8rem; /* Ajustamos tamaño de texto para pantallas pequeñas */
     }
 
     .caption h6 {
         font-size: 1rem;
-    }
-
-    .main-button.scroll-to-section a {
-        font-size: 0.9rem; /* Ajustamos el tamaño del botón para pantallas pequeñas */
-        padding: 10px 20px; /* Reducimos el tamaño del botón */
     }
 }
 /* ***** Main Banner Area fin ***** */
