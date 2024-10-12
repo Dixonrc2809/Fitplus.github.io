@@ -203,32 +203,31 @@ h1 {
 /* Ajustes para pantallas medianas */
 @media (max-width: 1024px) {
     .main-banner {
-        height: 75vh; /* Reducimos un poco la altura */
+        height: 75vh;
     }
 
     #bg-image {
         object-fit: cover;
-        object-position: center top; /* Alineamos la imagen desde la parte superior */
-        height: 100%;
+        object-position: center top;
     }
 }
 
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     .main-banner {
-        height: auto; /* Ajustamos la altura para adaptarse mejor */
-        min-height: 400px; /* Aseguramos una altura mínima */
+        height: auto;
+        min-height: 400px;
     }
 
     #bg-image {
-        object-fit: contain; /* Muestra toda la imagen sin recortar */
-        object-position: center; /* Centramos la imagen */
+        object-fit: contain;
+        object-position: center;
         width: 100%;
-        height: auto; /* Mantén la proporción de la imagen */
+        height: auto;
     }
 
     .caption h2 {
-        font-size: 1.8rem; /* Ajustamos tamaño de texto para pantallas pequeñas */
+        font-size: 1.8rem;
     }
 
     .caption h6 {
