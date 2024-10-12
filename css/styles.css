@@ -118,13 +118,13 @@ h1 {
 .main-banner {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
 }
 
 #bg-image {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -203,35 +203,78 @@ h1 {
 /* Ajustes para pantallas medianas */
 @media (max-width: 1024px) {
     .main-banner {
-        height: 150vh;
+        height: auto; 
     }
 
     #bg-image {
-        object-fit: cover;
-        object-position: center top;
+        width: 100%;
+        height: auto; 
+        object-fit: cover; 
+        object-position: center; 
+    }
+
+    .image-overlay {
+        position: absolute; /* Asegúrate de que esté en posición absoluta */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex; /* Usar flexbox */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        text-align: center;
+        z-index: 1; /* Asegurarte de que esté por encima de la imagen */
+        color: white; /* Color del texto */
+    }
+
+    .caption h2,
+    .caption h6 {
+        opacity: 1; 
+        animation: none; /* Desactivar la animación para que aparezca de inmediato */
+    }
+
+    .main-button.scroll-to-section {
+        opacity: 1; 
+        animation: none; 
     }
 }
 
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     .main-banner {
-        height: 100vh;
-        min-height: 400px;
+        height: auto; 
+    }
+    .image-overlay {
+        position: absolute; /* Asegúrate de que esté en posición absoluta */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex; 
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        text-align: center;
+        z-index: 1; 
+        color: white; 
     }
 
     #bg-image {
-        object-fit: contain;
-        object-position: center;
         width: 100%;
         height: auto;
+        object-fit: cover; 
+        object-position: center; 
     }
 
     .caption h2 {
-        font-size: 1.8rem;
+        font-size: 0.7rem; 
     }
 
     .caption h6 {
-        font-size: 1rem;
+        font-size: 0.4rem; /* Ajustar tamaño de texto para pantallas pequeñas */
+    }
+
+    .main-button.scroll-to-section a {
+        font-size: 0.7rem; /* Reducir tamaño de texto del botón */
     }
 }
 /* ***** Main Banner Area fin ***** */
