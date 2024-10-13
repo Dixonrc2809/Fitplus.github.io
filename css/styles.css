@@ -651,6 +651,114 @@ img.rounded-circle {
 /* Inicio Fin */
 /* ---------------------------------------------- */
 
+
+
+/* ---------------------------------------------- */
+/* Nosotros Inicio */
+/* ---------------------------------------------- */
+.custom-card {
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #f7f7f7, #ffffff);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.custom-card::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #6fb02021;
+    border-radius: 50%;
+    top: -50px;
+    right: -50px;
+    z-index: 1;
+}
+
+.custom-card::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #6fb02021;
+    border-radius: 50%;
+    bottom: -30px;
+    left: -30px;
+    z-index: 1;
+}
+
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+    color: #8A70B0;
+    text-transform: uppercase;
+}
+
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    z-index: 2;
+    position: relative;
+    text-align: justify;
+}
+
+
+@media (max-width: 768px) {
+    .custom-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Para pantallas medianas (tablets y dispositivos medianos) */
+@media (max-width: 992px) {
+    .bg-blog {
+        background-size: contain; /* Redimensionar la imagen para que quepa en el contenedor */
+        height: 400px; /* Reducir el alto del banner */
+        background-position: center;
+    }
+}
+
+/* Para pantallas pequeñas (móviles y dispositivos pequeños) */
+@media (max-width: 768px) {
+    .bg-blog {
+        background-size: cover; /* Asegurarte de que la imagen cubra todo el contenedor */
+        height: 300px; /* Reducir aún más el alto del banner */
+        background-position: center;
+    }
+}
+
+/* Para pantallas muy pequeñas (dispositivos móviles pequeños) */
+@media (max-width: 576px) {
+    .bg-blog {
+        background-size: cover; 
+        height: 250px; /* Más pequeño aún */
+        background-position: center;
+    }
+}
+
+/* ---------------------------------------------- */
+/* Nosotros Fin */
+/* ---------------------------------------------- */
+
+
+
 /* ***** Banner en los HTML ***** */
 [class^="flaticon-"]:before,
 [class*=" flaticon-"]:before,
@@ -726,9 +834,8 @@ img.rounded-circle {
     margin-top: 8px; /* Margen superior */
 }
 
+
 /* ***** Contacto Inicio ***** */
-
-
 h1 {
     color: #FFA500; 
 }
@@ -779,7 +886,6 @@ h1 {
     background-color: #8A70B0 !important;
 }
 
-
 /* Map styles */
 iframe {
     border-radius: 10px;
@@ -789,7 +895,6 @@ iframe {
 .text-primary {
     color: #70b020 !important;
 }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -805,151 +910,9 @@ iframe {
         margin-bottom: 1.5rem; /* Space between cards on smaller screens */
     }
 }
+/* ***** Contacto Fin ***** */
 
 
-
-/* ***** Barras de Concurrencia INICIO***** */
-
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.barrasConcurrencia {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    width: 80%;
-    margin: auto;
-}
-
-.bar-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.bar {
-    background-color: #70b020;
-    color: white;
-    text-align: center;
-    width: 100%;
-    margin: 5px 0;
-    border-radius: 10px 10px 0 0; /* Esquinas redondeadas solo en la parte superior */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de la barra */
-    animation: grow 0.6s forwards; /* Animación de crecimiento */
-}
-
-.bar:hover {
-    background-color: #45a049;
-    transform: translateY(-5px); /* Levantar la barra al pasar el mouse */
-}
-
-.label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.value {
-    padding-top: 5px;
-}
-
-/* Animación para hacer crecer las barras */
-@keyframes grow {
-    from {
-        transform: scaleY(0); /* Iniciar con las barras escondidas */
-    }
-    to {
-        transform: scaleY(1); /* Crecer hasta su altura original */
-    }
-}
-
-/* Media Queries para Responsividad */
-@media (max-width: 768px) {
-    .barrasConcurrencia {
-        flex-direction: column; /* Cambia a una columna en pantallas más pequeñas */
-        align-items: center; /* Centra las barras */
-    }
-
-    .bar-container {
-        max-width: 90%; /* Aumenta el ancho máximo para pantallas pequeñas */
-    }
-}
-/* ***** Barras de Concurrencia FIN ***** */
-
-
-/* ****** Estilos para la sección de Nosotros INICIO ******* */
-.custom-card {
-    border: none;
-    border-radius: 15px;
-    background: linear-gradient(145deg, #f7f7f7, #ffffff);
-    padding: 20px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-}
-
-/* Hover effect */
-.custom-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-/* Decorative shapes */
-.custom-card::before {
-    content: '';
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    background: #6fb02021;
-    border-radius: 50%;
-    top: -50px;
-    right: -50px;
-    z-index: 1;
-}
-
-.custom-card::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: #6fb02021;
-    border-radius: 50%;
-    bottom: -30px;
-    left: -30px;
-    z-index: 1;
-}
-
-/* Title styling */
-.card-title {
-    font-size: 1.75rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 15px;
-    position: relative;
-    color: #8A70B0;
-    text-transform: uppercase;
-}
-
-/* Text styling */
-.card-text {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #555;
-    z-index: 2;
-    position: relative;
-    text-align: justify;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .custom-card {
-        margin-bottom: 20px;
-    }
-}
-/* ****** Estilos para la sección de Nosotros FIN ****** */
 
 
 /* ***** Footer Inicio ***** */
