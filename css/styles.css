@@ -722,16 +722,20 @@ img.rounded-circle {
     text-align: justify;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     .custom-card {
-        margin: 10px 0; /* Espacio superior e inferior en pantallas pequeñas */
-        width: calc(100% - 20px); /* Ancho completo en pantallas pequeñas, restando margen */
+        margin: 10px 0; 
+        width: calc(100% - 20px); 
     }
 }
-
-
-
-
+@media (min-width: 769px) and (max-width: 992px) {
+    .custom-card {
+        margin-bottom: 20px; 
+        flex: 0 0 48%; 
+        max-width: 48%; 
+    }
+}
 /* ---------------------------------------------- */
 /* Nosotros Fin */
 /* ---------------------------------------------- */
@@ -892,6 +896,13 @@ iframe {
 /* ***** Contacto Fin ***** */
 
 
+/* ***** Partipantes Acerca Inicio ***** */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #70b020;
+}
+/* ***** Partipantes Acerca Fin ***** */
 
 
 /* ***** Footer Inicio ***** */
