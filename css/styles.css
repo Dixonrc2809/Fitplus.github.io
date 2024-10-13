@@ -793,43 +793,69 @@ img.rounded-circle {
 /* ---------------------------------------------- */
 
 
-/* Estilos de las tarjetas de Servicios */
+/* ---------------------------------------------- */
+/* Servicios Inicio */
+/* ---------------------------------------------- */
 .col-md-6 {
     display: flex; /* Habilita el uso de flexbox en cada columna */
     justify-content: center; /* Centra las tarjetas dentro de la columna */
 }
 
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .col-12 {
+        margin-bottom: 20px; /* Añade espacio inferior entre las filas en pantallas pequeñas */
+    }
+}
 
 .card {
     border-radius: 8px; /* Bordes redondeados */
     overflow: hidden; /* Esconde el contenido que se salga */
     transition: transform 0.3s ease; /* Efecto de transformación */
     margin: 10px; /* Margen alrededor de la tarjeta */
-    max-width: 300px; /* Ancho máximo de la tarjeta */
+    max-width: 100%; /* Ancho máximo de la tarjeta para que ocupe el 100% de su contenedor */
     box-shadow: 0 2px 8px rgba(48, 44, 44, 0.1); /* Sombra sutil */
+    background-color: #000; /* Fondo negro para toda la tarjeta */
+    color: #fff; /* Color de texto blanco por defecto */
 }
 
 .card:hover {
     transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
 }
 
-.card__content {
+.card-body {
     padding: 15px; /* Espaciado interno */
-    background-color: #fff; /* Fondo blanco para el contenido */
 }
 
 .category {
     font-weight: bold; /* Texto en negrita */
-    color: #8A70B0; /* Color de la categoría */
+    color: #8A70B0; /* Color de la categoría (morado) */
     font-size: 1.1em; /* Tamaño de fuente */
 }
 
 .heading {
     font-size: 0.9em; /* Tamaño de fuente más pequeño */
-    color: #333; /* Color de texto */
+    color: #fff; /* Color de texto blanco para el encabezado */
     margin-top: 8px; /* Margen superior */
 }
 
+/* Ajustes para pantallas medianas */
+@media (min-width: 768px) and (max-width: 992px) {
+    .card {
+        max-width: 90%; /* Permitir un poco de margen en pantallas medianas */
+    }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 992px) {
+    .card {
+        max-width: 300px; /* Mantener el ancho máximo en pantallas grandes */
+    }
+}
+
+/* ---------------------------------------------- */
+/* Servicios Fin */
+/* ---------------------------------------------- */
 
 
 /* ***** Contacto Inicio ***** */
