@@ -741,19 +741,19 @@ img.rounded-circle {
 /* ---------------------------------------------- */
 
 
-
-/* ***** Banner en los HTML ***** */
+/* ---------------------------------------------- */
+/* Banner en los HTML Inicio */
+/* ---------------------------------------------- */
 [class^="flaticon-"]:before,
 [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after,
 [class*=" flaticon-"]:after {
     color: #8A70B0;
     font-size: inherit;
-    
 }
 
 .programe::after {
-    position :absolute;
+    position: absolute;
     content: "";
     width: 100%;
     height: calc(100% - 45px);
@@ -763,22 +763,35 @@ img.rounded-circle {
     z-index: -1;
 }
 
-.bg-blog {
-    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../imagenes/bannerBlog.jpg) top center no-repeat;
-    background-size: cover;
-}
-
-.bg-servicios {
-    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../imagenes/bannerBlog.jpg) top center no-repeat;
-    background-size: cover;
-}
-
 .bg-blog,
 .bg-servicios {
+    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../imagenes/bannerBlog.jpg) top center no-repeat;
+    background-size: cover;
     width: 100%; /* Ancho completo */
     height: 300px; /* Altura fija, puedes ajustar esto */
     overflow: hidden; /* Oculta el desbordamiento */
+    position: relative; /* Permite que el pseudo-elemento se posicione correctamente */
 }
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .bg-blog,
+    .bg-servicios {
+        height: 200px; /* Altura ajustada para pantallas pequeñas */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .bg-blog,
+    .bg-servicios {
+        height: 250px; /* Altura ajustada para pantallas medianas */
+    }
+}
+
+/* ---------------------------------------------- */
+/* Banner en los HTML Fin */
+/* ---------------------------------------------- */
+
 
 /* Estilos de las tarjetas de Servicios */
 .col-md-6 {
@@ -816,6 +829,7 @@ img.rounded-circle {
     color: #333; /* Color de texto */
     margin-top: 8px; /* Margen superior */
 }
+
 
 
 /* ***** Contacto Inicio ***** */
