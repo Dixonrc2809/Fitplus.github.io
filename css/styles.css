@@ -593,7 +593,63 @@ h1 {
 }
 /* ***** Horario fin ***** */
 
+/* ***** Testimonios inicio ******* */
 
+.testimonial-item {
+    padding: 30px; /* Padding interno */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    box-shadow: 0 4px 20px #8a70b067; /* Sombra suave */
+    transition: transform 0.3s ease; /* Transición suave */
+    margin: 15px; /* Margen entre testimonios */
+    
+}
+
+.schedule-card .text-light h2.display-5 {
+    color: #FFA500; /* Cambia este valor por el color que prefieras */
+}
+
+.testimonial-item:hover {
+    transform: scale(1.05); /* Aumentar ligeramente al pasar el mouse */
+}
+
+img.rounded-circle {
+    width: 60px; /* Ancho de la imagen del cliente */
+    height: 60px; /* Alto de la imagen del cliente */
+    position: absolute; /* Posicionamiento absoluto */
+    border: 2px solid #FFA500; /* Borde azul alrededor de la imagen */
+}
+
+.ps-4 h5 {
+    margin: 0; /* Eliminar margen por defecto */
+    font-size: 1.25em; /* Tamaño del nombre del cliente */
+    color: #8A70B0; /* Color claro */
+    text-align: left; /* Alinear a la izquierda */
+    padding-left: 80px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .testimonial-item {
+        flex-direction: column; /* Cambiar a una columna en pantallas pequeñas */
+        align-items: flex-start;
+        text-align: center; 
+        padding: 20px; 
+    }
+
+    img.rounded-circle {
+        margin-bottom: 10px; 
+    }
+
+    .ps-4 h5 {
+        font-size: 1.1em; 
+    }
+}
+/* Testimonios fin */
+
+/* ---------------------------------------------- */
+/* Inicio Fin */
+/* ---------------------------------------------- */
 
 /* ***** Banner en los HTML ***** */
 [class^="flaticon-"]:before,
@@ -822,57 +878,6 @@ h1 {
 }
 /* ***** Barras de Concurrencia FIN ***** */
 
-/* ***** Estilos para la sección de testimonios INICIO ******* */
-
-.testimonial-item {
-    padding: 30px; /* Padding interno */
-    border-radius: 10px; /* Bordes redondeados */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
-    box-shadow: 0 4px 20px #8a70b067; /* Sombra suave */
-    transition: transform 0.3s ease; /* Transición suave */
-    margin: 15px; /* Margen entre testimonios */
-    
-}
-
-.testimonial-item:hover {
-    transform: scale(1.05); /* Aumentar ligeramente al pasar el mouse */
-}
-
-img.rounded-circle {
-    width: 60px; /* Ancho de la imagen del cliente */
-    height: 60px; /* Alto de la imagen del cliente */
-    position: absolute; /* Posicionamiento absoluto */
-    border: 2px solid #FFA500; /* Borde azul alrededor de la imagen */
-}
-
-.ps-4 h5 {
-    margin: 0; /* Eliminar margen por defecto */
-    font-size: 1.25em; /* Tamaño del nombre del cliente */
-    color: #f8f9fa; /* Color claro */
-    text-align: left; /* Alinear a la izquierda */
-    padding-left: 80px;
-}
-
-/* Media Queries para Responsividad */
-@media (max-width: 768px) {
-    .testimonial-item {
-        flex-direction: column; /* Cambiar a una columna en pantallas pequeñas */
-        align-items: flex-start; /* Alinear a la izquierda */
-        text-align: center; /* Centrar texto en móviles */
-        padding: 20px; /* Ajustar padding en móviles */
-    }
-
-    img.rounded-circle {
-        margin-bottom: 10px; /* Espacio debajo de la imagen en móviles */
-    }
-
-    .ps-4 h5 {
-        font-size: 1.1em; /* Ajustar tamaño de fuente en móviles */
-    }
-}
-/* Estilos para la sección de testimonios FIN */
-
-
 
 /* ****** Estilos para la sección de Nosotros INICIO ******* */
 .custom-card {
@@ -1062,9 +1067,24 @@ ion-icon {
 
 /* ***** Footer Fin ***** */
 
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
 
+.aqua-gradient {
+  background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
+}
 
-
+.testimonial-card .avatar {
+  width: 120px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
 
 
 
