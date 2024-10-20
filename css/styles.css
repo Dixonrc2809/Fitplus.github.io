@@ -389,17 +389,17 @@ h1 {
 
 
 .mi-icono {
-    background-image: url('../imagenes/te_esperamos.jpg'); /* Imagen del ícono del entrenador */
+    background-image: url('../imagenes/entrenador.jpg'); /* Imagen del ícono del entrenador */
 }
 
 
 .mi-icono1 {
-    background-image: url('../imagenes/te_esperamos.jpg'); /* Cambiar imagen para el recepcionista */
+    background-image: url('../imagenes/recepcionista.jpg'); /* Cambiar imagen para el recepcionista */
 }
 
 
 .mi-icono2 {
-    background-image: url('../imagenes/te_esperamos.jpg'); /* Cambiar imagen para la persona */
+    background-image: url('../imagenes/nutricionista.jpg'); /* Cambiar imagen para la persona */
 }
 
 /* Para pantallas medianas */
@@ -736,6 +736,25 @@ img.rounded-circle {
         max-width: 48%; 
     }
 }
+
+/*Video*/
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #000;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* ---------------------------------------------- */
 /* Nosotros Fin */
 /* ---------------------------------------------- */
@@ -744,31 +763,12 @@ img.rounded-circle {
 /* ---------------------------------------------- */
 /* Banner en los HTML Inicio */
 /* ---------------------------------------------- */
-[class^="flaticon-"]:before,
-[class*=" flaticon-"]:before,
-[class^="flaticon-"]:after,
-[class*=" flaticon-"]:after {
-    color: #8A70B0;
-    font-size: inherit;
-}
-
-.programe::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: calc(100% - 45px);
-    top: 135px;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.93);
-    z-index: -1;
-}
-
 .bg-blog,
 .bg-servicios {
     background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../imagenes/bannerBlog.jpg) top center no-repeat;
     background-size: cover;
     width: 100%; /* Ancho completo */
-    height: 300px; /* Altura fija, puedes ajustar esto */
+    height: 300px; /* Altura fija */
     overflow: hidden; /* Oculta el desbordamiento */
     position: relative; /* Permite que el pseudo-elemento se posicione correctamente */
 }
@@ -779,6 +779,10 @@ img.rounded-circle {
     .bg-servicios {
         height: 200px; /* Altura ajustada para pantallas pequeñas */
     }
+    
+    h1.display-2 {
+        font-size: 2.5rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -786,11 +790,21 @@ img.rounded-circle {
     .bg-servicios {
         height: 250px; /* Altura ajustada para pantallas medianas */
     }
+    
+    h1.display-2 {
+        font-size: 3.5rem; /* Ajusta el tamaño de fuente para pantallas medianas */
+    }
 }
 
+@media (min-width: 992px) {
+    h1.display-2 {
+        font-size: 4.5rem; /* Tamaño de fuente en pantallas grandes */
+    }
+}
 /* ---------------------------------------------- */
 /* Banner en los HTML Fin */
 /* ---------------------------------------------- */
+
 
 
 /* ---------------------------------------------- */
@@ -1082,6 +1096,3 @@ ion-icon {
   border: 5px solid #fff;
   border-radius: 50%;
 }
-
-
-
