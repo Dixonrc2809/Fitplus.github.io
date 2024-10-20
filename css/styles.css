@@ -956,6 +956,17 @@ iframe {
     object-fit: cover;
     border-bottom: 2px solid #70b020;
 }
+
+.email-text {
+    font-size: 0.85rem; /* Ajusta el tamaño según tus necesidades */
+}
+
+@media (max-width: 768px) {
+    .email-text {
+        font-size: 0.75rem; /* Tamaño para pantallas pequeñas */
+    }
+}
+
 /* ***** Partipantes Acerca Fin ***** */
 
 
