@@ -8,7 +8,7 @@ body {
 }
 
 
-h1, h2, h3, h4, h5 {
+h2, h3, h4, h5 {
     color: #FFA500; 
     margin: 0; /* Remove default margin for headings */
 }
@@ -357,10 +357,14 @@ h1 {
     color: #8A70B0;
 }
 
-
-.bg-light p {
-    color: #666; /* Color del texto dentro de cada tarjeta */
+.bg-light {
+    background-color: #000000 !important; /* Este es el color de fondo claro predeterminado de Bootstrap */
+    color: #ffffff; /* Ya lo tienes definido para el texto */
+    border: 2px solid #8A70B0; /* Borde de 2px sólido y morado */
+    border-radius: 15px;
 }
+
+
 
 /* Estilos para pantallas grandes (desktops) */
 @media (min-width: 1200px) {
@@ -739,21 +743,9 @@ img.rounded-circle {
 
 /*Video*/
 .video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background-color: #000;
+    text-align: center;
 }
 
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 /* ---------------------------------------------- */
 /* Nosotros Fin */
@@ -872,7 +864,70 @@ img.rounded-circle {
 /* ---------------------------------------------- */
 
 
-/* ***** Contacto Inicio ***** */
+
+/* ---------------------------------------------- */
+/* Blog Inicio */
+/* ---------------------------------------------- */
+.blog-grid {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transform: translateY(20px); /* Desplazado hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones suaves */
+}
+
+.blog-grid:hover {
+    transform: translateY(0); /* Regresa a su posición original */
+}
+
+.blog-grid .blog-img {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.blog-grid .blog-info {
+    box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+    border-radius: 5px;
+    background: #ffffff;
+    padding: 20px;
+    margin: -30px 20px 0;
+    position: relative;
+}
+
+.blog-grid .blog-info h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 10px;
+}
+
+.blog-grid .blog-info h5 a {
+    color: #8A70B0;
+}
+
+.blog-grid .blog-info p {
+    margin: 0;
+}
+
+.blog-grid .blog-info .btn-bar {
+    margin-top: 20px;
+}
+
+.px-btn-arrow {
+    color: #70b020;
+}
+
+.section.gray-bg {
+    margin-bottom: 40px; /* Espacio entre el blog y el footer */
+}
+/* ---------------------------------------------- */
+/* Blog Fin */
+/* ---------------------------------------------- */
+
+
+
+/* ---------------------------------------------- */
+/* Contacto Inicio */
+/* ---------------------------------------------- */
 h1 {
     color: #FFA500; 
 }
@@ -947,10 +1002,64 @@ iframe {
         margin-bottom: 1.5rem; /* Space between cards on smaller screens */
     }
 }
-/* ***** Contacto Fin ***** */
 
 
-/* ***** Partipantes Acerca Inicio ***** */
+/* Form Contactos Inicio*/
+
+.form-container {
+    margin-top: 30px;
+    background-color: #343a40; 
+    border-radius: 8px; 
+    padding: 40px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.form-control {
+    background-color: #f8f9fa; /* Color de fondo de los inputs */
+    border: 1px solid #ced4da; /* Borde suave */
+    border-radius: 5px; 
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transición de color de borde */
+    padding: 15px; 
+    font-size: 16px; 
+    margin-bottom: 15px; /* Espacio entre los campos */
+}
+
+.form-control:focus {
+    border-color: #FFA500; 
+    box-shadow: 0 0 5px #70b020; /* Sombra al enfocar */
+    outline: none; /* Sin contorno */
+}
+
+.btn {
+    background-color: #8A70B0; 
+    color: #ffffff;
+    border: none; 
+    border-radius: 5px; 
+    padding: 15px; 
+    font-size: 16px; 
+    transition: background-color 0.3s, transform 0.3s; /* Transición de color y transformación */
+}
+
+.btn:hover {
+    background-color: #3d2c57; 
+    transform: translateY(-2px); 
+    color: #ffffff; 
+}
+
+/* Margen inferior para el formulario en pantallas pequeñas */
+@media (max-width: 768px) {
+    .form-container {
+        margin-bottom: 30px; /* Espacio inferior en pantallas pequeñas */
+    }
+}
+/* ---------------------------------------------- */
+/* Contacto Fin */
+/* ---------------------------------------------- */
+
+
+/* ---------------------------------------------- */
+/* Acerca De Inicio */
+/* ---------------------------------------------- */
 .card-img-top {
     height: 200px;
     object-fit: cover;
@@ -966,15 +1075,15 @@ iframe {
         font-size: 0.75rem; /* Tamaño para pantallas pequeñas */
     }
 }
-
-/* ***** Partipantes Acerca Fin ***** */
-
-
-
+/* ---------------------------------------------- */
+/* Acerca De Fin */
+/* ---------------------------------------------- */
 
 
 
-/* ***** Footer Inicio ***** */
+/* ---------------------------------------------- */
+/* Footer Inicio */
+/* ---------------------------------------------- */
 .footer {
     position: relative;
     width: 100%;
@@ -1087,23 +1196,25 @@ ion-icon {
     }
 }
 
-/* ***** Footer Fin ***** */
+/* ---------------------------------------------- */
+/* Footer Fin */
+/* ---------------------------------------------- */
 
 .testimonial-card .card-up {
-  height: 120px;
-  overflow: hidden;
-  border-top-left-radius: .25rem;
-  border-top-right-radius: .25rem;
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
 }
 
 .aqua-gradient {
-  background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
+    background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
 }
 
 .testimonial-card .avatar {
-  width: 120px;
-  margin-top: -60px;
-  overflow: hidden;
-  border: 5px solid #fff;
-  border-radius: 50%;
+    width: 120px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    border-radius: 50%;
 }
