@@ -960,9 +960,7 @@ img.rounded-circle {
 /* ---------------------------------------------- */
 /* Contacto Inicio */
 /* ---------------------------------------------- */
-h1 {
-    color: #FFA500; 
-}
+
 
 /* Card Styles */
 .d-flex {
@@ -1035,17 +1033,19 @@ iframe {
     }
 }
 
-/* Tamaño del H1 en pantallas medianas*/
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem; 
+/* Tamaño del h2 en pantallas medianas */
+@media (max-width: 992px) {
+    h2 {
+        font-size: 2.5rem; /* Ajuste del tamaño para pantallas medianas */
+        text-align: center;
     }
 }
 
-/* Tamaño del H1 en pantallas pequeñas*/
+/* Tamaño del h2 en pantallas pequeñas */
 @media (max-width: 576px) {
-    h1 {
-        font-size: 2rem; 
+    h2 {
+        font-size: 2rem; /* Ajuste del tamaño para pantallas pequeñas */
+        text-align: center;
     }
 }
 
