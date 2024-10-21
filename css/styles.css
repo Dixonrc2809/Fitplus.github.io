@@ -1003,6 +1003,20 @@ iframe {
     }
 }
 
+/* Tamaño del H1 en pantallas medianas*/
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; 
+    }
+}
+
+/* Tamaño del H1 en pantallas pequeñas*/
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem; 
+    }
+}
+
 
 /* Form Contactos Inicio*/
 
