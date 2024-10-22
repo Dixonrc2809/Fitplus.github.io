@@ -288,3 +288,10 @@ font-weight: 600;
 font-size: 18px;
 margin: 0;
 }
+
+
+/*Imagen del inicio*/
+.img-estirada {
+    width: 100%;  /* Ajusta al 100% del contenedor */
+    height: 350px; /* Mantiene la relación de aspecto */
+}
