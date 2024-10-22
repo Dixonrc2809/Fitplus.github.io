@@ -638,7 +638,7 @@ img.rounded-circle {
         flex-direction: column; /* Cambiar a una columna en pantallas pequeñas */
         align-items: flex-start;
         text-align: center; 
-        padding: 20px; 
+        padding: 20px;
     }
 
     img.rounded-circle {
