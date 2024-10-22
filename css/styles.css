@@ -1097,6 +1097,20 @@ iframe {
         margin-bottom: 30px; /* Espacio inferior en pantallas pequeñas */
     }
 }
+
+/* Aumentar el tamaño de los campos en pantallas pequeñas */
+@media (max-width: 576px) {
+    .form-control {
+        font-size: 18px; /* Tamaño de fuente más grande en pantallas pequeñas */
+        padding: 12px; /* Aumentar el padding */
+    }
+
+    .btn {
+        font-size: 18px; /* Tamaño de fuente más grande para el botón */
+        padding: 15px; /* Aumentar el padding del botón */
+    }
+}
+
 /* ---------------------------------------------- */
 /* Contacto Fin */
 /* ---------------------------------------------- */
