@@ -753,7 +753,6 @@ img.rounded-circle {
     overflow: hidden;
     max-width: 100%;
     background-color: #000;
-    margin-bottom: 20px; /* Espacio entre el video y el footer */
 }
 
 /* Estilos para el iframe */
@@ -1074,27 +1073,27 @@ iframe {
 
 .btn:hover {
     background-color: #3d2c57; 
-    transform: translateY(-2px); 
+    transform: translateY(-2px); /*Efecto de levantar*/
     color: #ffffff; 
 }
 
-/* Margen inferior para el formulario en pantallas pequeñas */
+/* formulario  pantallas medianas */
 @media (max-width: 768px) {
     .form-container {
-        margin-bottom: 30px; /* Espacio inferior en pantallas pequeñas */
+        margin-bottom: 30px; 
     }
 }
 
-/* Aumentar el tamaño de los campos en pantallas pequeñas */
+/* formulario pantallas pequeñas */
 @media (max-width: 576px) {
     .form-control {
-        font-size: 18px; /* Tamaño de fuente más grande en pantallas pequeñas */
-        padding: 12px; /* Aumentar el padding */
+        font-size: 18px; 
+        padding: 12px; 
     }
 
     .btn {
-        font-size: 18px; /* Tamaño de fuente más grande para el botón */
-        padding: 15px; /* Aumentar el padding del botón */
+        font-size: 18px; 
+        padding: 15px; 
     }
 }
 
@@ -1113,12 +1112,13 @@ iframe {
 }
 
 .email-text {
-    font-size: 0.85rem; /* Ajusta el tamaño según tus necesidades */
+    font-size: 0.85rem; 
 }
 
+/*pantallas medianas*/
 @media (max-width: 768px) {
     .email-text {
-        font-size: 0.75rem; /* Tamaño para pantallas pequeñas */
+        font-size: 0.75rem; 
     }
 }
 /* ---------------------------------------------- */
