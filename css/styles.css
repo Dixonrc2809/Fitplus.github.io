@@ -753,6 +753,7 @@ img.rounded-circle {
     overflow: hidden;
     max-width: 100%;
     background-color: #000;
+    margin-bottom: 20px; /* Espacio entre el video y el footer */
 }
 
 /* Estilos para el iframe */
@@ -959,14 +960,6 @@ img.rounded-circle {
 /* Estilos de las cards */
 .d-flex {
     background-color: #343a40; 
-}
-
-.d-flex .bg-primary {
-    background-color: #FFA500;
-}
-
-.text-secondary {
-    color: #e7e7e7; 
 }
 
 /* Estilos del form */
